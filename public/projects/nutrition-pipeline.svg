@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <rect width="800" height="450" fill="#0b1329" />
+  
+  <text x="40" y="45" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="18">Computer Vision Classification Pipeline</text>
+  <text x="40" y="70" fill="#38bdf8" font-family="monospace" font-size="12">Convolutional Feature Extraction &amp; Database Matching</text>
+
+  <!-- Step 1: Input -->
+  <rect x="50" y="120" width="140" height="200" rx="8" fill="#1e293b" stroke="#334155" />
+  <text x="120" y="150" fill="#38bdf8" font-family="monospace" font-size="11" text-anchor="middle">STAGE 01</text>
+  <text x="120" y="180" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">Pre-Processing</text>
+  <text x="120" y="210" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">CLAHE Balance</text>
+  <text x="120" y="235" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">Resolution Norm</text>
+  <text x="120" y="260" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">Data Augmentation</text>
+
+  <!-- Step 2: Backbone -->
+  <rect x="230" y="120" width="160" height="200" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" />
+  <text x="310" y="150" fill="#60a5fa" font-family="monospace" font-size="11" text-anchor="middle">STAGE 02</text>
+  <text x="310" y="180" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">EfficientNet CNN</text>
+  <text x="310" y="210" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">MBConv Blocks</text>
+  <text x="310" y="235" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">Squeeze-Excitation</text>
+  <text x="310" y="260" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">Dense Embedding</text>
+
+  <!-- Step 3: Classification -->
+  <rect x="430" y="120" width="150" height="200" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+  <text x="505" y="150" fill="#34d399" font-family="monospace" font-size="11" text-anchor="middle">STAGE 03</text>
+  <text x="505" y="180" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">Classification</text>
+  <text x="505" y="210" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">Softmax Multi-head</text>
+  <text x="505" y="235" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">Confidence Score</text>
+  <text x="505" y="260" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">Portion Estimation</text>
+
+  <!-- Step 4: Output -->
+  <rect x="620" y="120" width="130" height="200" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" />
+  <text x="685" y="150" fill="#fbbf24" font-family="monospace" font-size="11" text-anchor="middle">STAGE 04</text>
+  <text x="685" y="180" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">Nutrition Map</text>
+  <text x="685" y="210" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">Calorie / Macros</text>
+  <text x="685" y="235" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">JSON Response</text>
+  <text x="685" y="260" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">REST Latency 45ms</text>
+
+  <!-- Footer Info -->
+  <rect x="50" y="350" width="700" height="50" rx="6" fill="#1e293b" stroke="#334155" />
+  <text x="80" y="380" fill="#cbd5e1" font-family="monospace" font-size="12">DATASET // 100K+ food instances | Loss: Cross-Entropy | Framework: TensorFlow &amp; OpenCV</text>
+</svg>

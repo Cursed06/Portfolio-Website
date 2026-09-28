@@ -1,0 +1,270 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="komodoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#091322" />
+      <stop offset="100%" stop-color="#0f233d" />
+    </linearGradient>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="675" fill="url(#komodoBg)" />
+
+  <!-- Ambient Radar & Flight Path Grid -->
+  <g opacity="0.08">
+    <circle cx="950" cy="150" r="280" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6 6" />
+    <circle cx="950" cy="150" r="180" fill="none" stroke="#38bdf8" stroke-width="1" />
+    <path d="M 100 500 Q 550 200 1100 350" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8 6" />
+  </g>
+
+  <!-- Browser Window Wrapper -->
+  <g transform="translate(60, 40)" filter="url(#shadow)">
+    <!-- Window Body -->
+    <rect width="1080" height="595" rx="16" fill="#ffffff" stroke="#1e293b" stroke-width="1.5" />
+
+    <!-- Window Top Header Bar -->
+    <path d="M 0 16 A 16 16 0 0 1 16 0 L 1064 0 A 16 16 0 0 1 1080 16 L 1080 48 L 0 48 Z" fill="#0b1727" stroke="#1e293b" stroke-width="1" />
+    <circle cx="28" cy="24" r="6" fill="#ef4444" />
+    <circle cx="48" cy="24" r="6" fill="#f59e0b" />
+    <circle cx="68" cy="24" r="6" fill="#10b981" />
+
+    <!-- URL Bar -->
+    <rect x="110" y="12" width="460" height="24" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="125" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">
+      https://komodo-air.app/flights/booking
+    </text>
+
+    <!-- Navigation Header inside app -->
+    <g transform="translate(0, 48)">
+      <rect width="1080" height="60" fill="#0f233d" />
+      
+      <!-- Logo -->
+      <g transform="translate(32, 16)">
+        <path d="M 0 14 L 14 0 L 28 14 L 14 28 Z" fill="#38bdf8" />
+        <path d="M 6 14 L 14 6 L 22 14 L 14 22 Z" fill="#0f233d" />
+        <text x="38" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="900" fill="#ffffff" letter-spacing="1">
+          KOMODO<tspan fill="#38bdf8">AIR</tspan>
+        </text>
+      </g>
+
+      <!-- Nav Links -->
+      <g transform="translate(480, 36)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#cbd5e1">
+        <text x="0" y="0" fill="#38bdf8">Book Flights</text>
+        <text x="110" y="0">My Bookings</text>
+        <text x="220" y="0">Flight Status</text>
+        <text x="330" y="0">Fleet Admin</text>
+      </g>
+
+      <!-- User Profile Badge -->
+      <g transform="translate(940, 16)">
+        <rect width="108" height="30" rx="15" fill="#1e3a5f" />
+        <circle cx="15" cy="15" r="9" fill="#38bdf8" />
+        <text x="32" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#ffffff">
+          Rama P. ▾
+        </text>
+      </g>
+    </g>
+
+    <!-- Flight Search Widget -->
+    <g transform="translate(32, 128)">
+      <rect width="1016" height="88" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" />
+      
+      <!-- Field 1: From -->
+      <g transform="translate(24, 18)">
+        <text x="0" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#64748b" letter-spacing="0.5">ORIGIN</text>
+        <text x="0" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#0f172a">CGK — Jakarta</text>
+        <text x="0" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">Soekarno-Hatta Int'l</text>
+      </g>
+
+      <!-- Arrow -->
+      <g transform="translate(250, 36)">
+        <circle cx="14" cy="14" r="14" fill="#e0f2fe" />
+        <text x="7" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#0284c7">→</text>
+      </g>
+
+      <!-- Field 2: To -->
+      <g transform="translate(300, 18)">
+        <text x="0" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#64748b" letter-spacing="0.5">DESTINATION</text>
+        <text x="0" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#0f172a">DPS — Denpasar, Bali</text>
+        <text x="0" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">Ngurah Rai Int'l</text>
+      </g>
+
+      <!-- Field 3: Date -->
+      <g transform="translate(560, 18)">
+        <text x="0" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#64748b" letter-spacing="0.5">DEPARTURE</text>
+        <text x="0" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#0f172a">12 Oct 2026</text>
+        <text x="0" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">Monday • Direct</text>
+      </g>
+
+      <!-- Field 4: Class -->
+      <g transform="translate(730, 18)">
+        <text x="0" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#64748b" letter-spacing="0.5">CABIN CLASS</text>
+        <text x="0" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#0f172a">Economy</text>
+        <text x="0" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">1 Passenger</text>
+      </g>
+
+      <!-- Search CTA Button -->
+      <g transform="translate(860, 22)">
+        <rect width="132" height="46" rx="8" fill="url(#amberGrad)" />
+        <text x="32" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#ffffff">
+          Find Flights ✈
+        </text>
+      </g>
+    </g>
+
+    <!-- Available Flights Results -->
+    <g transform="translate(32, 236)">
+      
+      <!-- Flight Card 1 (Active Selected) -->
+      <g transform="translate(0, 0)">
+        <rect width="640" height="150" rx="12" fill="#ffffff" stroke="#0284c7" stroke-width="2" />
+        <rect x="0" y="0" width="8" height="150" rx="4" fill="#0284c7" />
+
+        <!-- Flight Meta -->
+        <g transform="translate(24, 20)">
+          <text x="0" y="14" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#0284c7">KA-402 • Boeing 737-800</text>
+          
+          <!-- Times & Route -->
+          <g transform="translate(0, 48)">
+            <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="#0f172a">08:30</text>
+            <text x="0" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b">CGK Terminal 3</text>
+
+            <!-- Duration line -->
+            <g transform="translate(100, -6)">
+              <text x="50" y="-8" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748b">1h 45m (Direct)</text>
+              <line x1="0" y1="0" x2="100" y2="0" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3" />
+              <polygon points="100,0 94,-3 94,3" fill="#64748b" />
+            </g>
+
+            <text x="220" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="#0f172a">11:15</text>
+            <text x="220" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b">DPS Domestic</text>
+          </g>
+
+          <text x="0" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#10b981" font-weight="600">
+            ✓ 20kg Baggage • In-Flight Meal • Free Seat Selection
+          </text>
+        </g>
+
+        <!-- Price & Action -->
+        <g transform="translate(470, 30)">
+          <text x="140" y="14" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#64748b">PER PASSENGER</text>
+          <text x="140" y="44" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="900" fill="#0f172a">IDR 1.250.000</text>
+          
+          <g transform="translate(30, 58)">
+            <rect width="110" height="36" rx="6" fill="#0284c7" />
+            <text x="22" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Select Seat ➔</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- Flight Card 2 (Secondary) -->
+      <g transform="translate(0, 165)">
+        <rect width="640" height="150" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        
+        <g transform="translate(24, 20)">
+          <text x="0" y="14" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#475569">KA-518 • Airbus A320</text>
+          
+          <g transform="translate(0, 48)">
+            <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="#334155">14:10</text>
+            <text x="0" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b">CGK Terminal 3</text>
+
+            <g transform="translate(100, -6)">
+              <text x="50" y="-8" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748b">1h 45m (Direct)</text>
+              <line x1="0" y1="0" x2="100" y2="0" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 3" />
+            </g>
+
+            <text x="220" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="#334155">16:55</text>
+            <text x="220" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b">DPS Domestic</text>
+          </g>
+
+          <text x="0" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b">
+            ✓ 20kg Baggage Included
+          </text>
+        </g>
+
+        <g transform="translate(470, 30)">
+          <text x="140" y="14" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#64748b">PER PASSENGER</text>
+          <text x="140" y="44" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="#334155">IDR 1.180.000</text>
+          
+          <g transform="translate(30, 58)">
+            <rect width="110" height="36" rx="6" fill="#e2e8f0" />
+            <text x="32" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#334155">Select</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- Right Sidebar: Interactive Seat Selection & Admin API Panel -->
+    <g transform="translate(700, 236)">
+      <rect width="348" height="315" rx="12" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      
+      <!-- Header -->
+      <text x="20" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#ffffff">
+        Seat Selection &amp; Fleet Allocation
+      </text>
+      <text x="20" y="48" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8">
+        KA-402 // JPA Aircraft Entity Mapped
+      </text>
+
+      <!-- Aircraft Cabin Layout Specimen -->
+      <g transform="translate(20, 68)">
+        <rect width="308" height="150" rx="8" fill="#1e293b" />
+        
+        <!-- Row 12 -->
+        <text x="15" y="35" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8">Row 12</text>
+        <rect x="70" y="20" width="22" height="24" rx="4" fill="#334155" />
+        <rect x="100" y="20" width="22" height="24" rx="4" fill="#334155" />
+        <rect x="130" y="20" width="22" height="24" rx="4" fill="#0284c7" stroke="#38bdf8" stroke-width="1.5" />
+        <text x="136" y="36" font-family="'JetBrains Mono', monospace" font-size="9" fill="#ffffff" font-weight="700">12C</text>
+        
+        <rect x="180" y="20" width="22" height="24" rx="4" fill="#334155" />
+        <rect x="210" y="20" width="22" height="24" rx="4" fill="#ef4444" opacity="0.6" />
+        <rect x="240" y="20" width="22" height="24" rx="4" fill="#334155" />
+
+        <!-- Row 13 -->
+        <text x="15" y="75" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8">Row 13</text>
+        <rect x="70" y="60" width="22" height="24" rx="4" fill="#334155" />
+        <rect x="100" y="60" width="22" height="24" rx="4" fill="#ef4444" opacity="0.6" />
+        <rect x="130" y="60" width="22" height="24" rx="4" fill="#334155" />
+        
+        <rect x="180" y="60" width="22" height="24" rx="4" fill="#334155" />
+        <rect x="210" y="60" width="22" height="24" rx="4" fill="#334155" />
+        <rect x="240" y="60" width="22" height="24" rx="4" fill="#334155" />
+
+        <!-- Legend -->
+        <g transform="translate(15, 115)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">
+          <circle cx="5" cy="5" r="4" fill="#334155" />
+          <text x="15" y="8">Available</text>
+
+          <circle cx="85" cy="5" r="4" fill="#0284c7" />
+          <text x="95" y="8" fill="#38bdf8">Selected (12C)</text>
+
+          <circle cx="185" cy="5" r="4" fill="#ef4444" />
+          <text x="195" y="8">Occupied</text>
+        </g>
+      </g>
+
+      <!-- Architecture Badge -->
+      <g transform="translate(20, 235)">
+        <rect width="308" height="60" rx="8" fill="#0284c7" fill-opacity="0.15" stroke="#0284c7" stroke-width="1" />
+        <text x="12" y="22" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#38bdf8">
+          SPRING SECURITY + JPA PERSISTENCE
+        </text>
+        <text x="12" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#cbd5e1">
+          JWT Token Auth • Atomic seat reservations &amp; invoice PDF
+        </text>
+      </g>
+    </g>
+
+  </g>
+</svg>

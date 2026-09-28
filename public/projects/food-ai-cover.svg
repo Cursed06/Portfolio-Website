@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="primaryBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad)" />
+
+  <!-- Background decorative grid / dots -->
+  <g opacity="0.08">
+    <pattern id="dotGrid" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#ffffff" />
+    </pattern>
+    <rect width="1200" height="675" fill="url(#dotGrid)" />
+  </g>
+
+  <!-- Browser Window Wrapper -->
+  <g transform="translate(60, 40)" filter="url(#shadow)">
+    <!-- Window Body -->
+    <rect width="1080" height="595" rx="16" fill="#ffffff" stroke="#334155" stroke-width="1.5" />
+
+    <!-- Window Top Header Bar -->
+    <path d="M 0 16 A 16 16 0 0 1 16 0 L 1064 0 A 16 16 0 0 1 1080 16 L 1080 48 L 0 48 Z" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+    <circle cx="28" cy="24" r="6" fill="#ef4444" />
+    <circle cx="48" cy="24" r="6" fill="#f59e0b" />
+    <circle cx="68" cy="24" r="6" fill="#10b981" />
+
+    <!-- URL Bar -->
+    <rect x="110" y="12" width="460" height="24" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+    <text x="125" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b">
+      https://food-recognition-ai.streamlit.app
+    </text>
+
+    <!-- App Streamlit Badge -->
+    <rect x="960" y="14" width="95" height="20" rx="4" fill="#fee2e2" />
+    <text x="972" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#dc2626">
+      STREAMLIT APP
+    </text>
+
+    <!-- App Title Section -->
+    <text x="40" y="85" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#0f172a">
+      🍱 Food AI with Nutrition Info &amp; Diet Recommendation
+    </text>
+
+    <!-- Info Callout Banner -->
+    <rect x="40" y="102" width="1000" height="34" rx="6" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1" />
+    <text x="55" y="123" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#1d4ed8">
+      ℹ️ Upload a food image, see AI prediction, confidence, nutritional info, and diet recommendation.
+    </text>
+
+    <!-- Left Column: Upload & Image Preview -->
+    <g transform="translate(40, 150)">
+      <rect width="480" height="210" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" />
+      
+      <!-- Upload Dropzone simulation -->
+      <rect x="16" y="16" width="448" height="50" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4" />
+      <text x="170" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#64748b" font-weight="600">
+        📸 Drag and drop image (PNG, JPG)
+      </text>
+
+      <!-- Food Image Mock Preview -->
+      <g transform="translate(16, 76)">
+        <rect width="448" height="118" rx="8" fill="#1e293b" />
+        <rect x="10" y="10" width="140" height="98" rx="6" fill="#78350f" opacity="0.85" />
+        <!-- Food art elements inside preview -->
+        <circle cx="80" cy="59" r="38" fill="#451a03" />
+        <ellipse cx="80" cy="59" rx="30" ry="24" fill="#9a3412" />
+        <ellipse cx="75" cy="55" rx="18" ry="14" fill="#7c2d12" />
+        <circle cx="88" cy="50" r="5" fill="#f97316" />
+        <circle cx="68" cy="62" r="6" fill="#ea580c" />
+        
+        <text x="165" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#ffffff">
+          rendang_sapi_sample.jpg
+        </text>
+        <text x="165" y="58" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8">
+          Preprocessed: 128 × 128 RGB
+        </text>
+        <text x="165" y="78" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38bdf8">
+          TensorFlow Keras CNN Inference: 38ms
+        </text>
+      </g>
+    </g>
+
+    <!-- Right Column: Diet Select & Prediction Metric -->
+    <g transform="translate(560, 150)">
+      <!-- Diet Selector Box -->
+      <text x="0" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#334155">
+        Pilih tipe diet:
+      </text>
+      <rect x="0" y="24" width="480" height="42" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+      <text x="16" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#0f172a">
+        diabetes
+      </text>
+      <path d="M 450 42 L 458 50 L 466 42" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round" />
+
+      <!-- Metric Card -->
+      <rect x="0" y="80" width="480" height="130" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" />
+      <text x="24" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#64748b" letter-spacing="0.5">
+        PREDICTED FOOD
+      </text>
+      <text x="24" y="155" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="900" fill="#0f172a">
+        Rendang
+      </text>
+      <!-- Delta / Confidence badge -->
+      <rect x="350" y="105" width="105" height="32" rx="6" fill="#dcfce7" />
+      <text x="362" y="126" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#16a34a">
+        ↑ 0.94 (94%)
+      </text>
+      <text x="24" y="185" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b">
+        Confidence threshold matched across 25 Indonesian dish classes
+      </text>
+    </g>
+
+    <!-- Bottom Section: Confidence Breakdown & Nutrition Table -->
+    <g transform="translate(40, 375)">
+      
+      <!-- Confidence Breakdown (Bar chart) -->
+      <g transform="translate(0, 0)">
+        <text x="0" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#0f172a">
+          📊 Confidence Breakdown (Top 3 Other Foods)
+        </text>
+        <rect x="0" y="32" width="480" height="155" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+
+        <!-- Bar 1: Gulai Tunjang -->
+        <text x="16" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#334155">gulai_tunjang</text>
+        <rect x="120" y="50" width="300" height="16" rx="4" fill="#f1f5f9" />
+        <rect x="120" y="50" width="55" height="16" rx="4" fill="#3b82f6" />
+        <text x="430" y="63" font-family="'JetBrains Mono', monospace" font-size="11" fill="#475569">0.04</text>
+
+        <!-- Bar 2: Daging Balado -->
+        <text x="16" y="98" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#334155">dendeng_batokok</text>
+        <rect x="120" y="86" width="300" height="16" rx="4" fill="#f1f5f9" />
+        <rect x="120" y="86" width="28" height="16" rx="4" fill="#60a5fa" />
+        <text x="430" y="99" font-family="'JetBrains Mono', monospace" font-size="11" fill="#475569">0.02</text>
+
+        <!-- Bar 3: Sate -->
+        <text x="16" y="134" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#334155">sate_daging</text>
+        <rect x="120" y="122" width="300" height="16" rx="4" fill="#f1f5f9" />
+        <rect x="120" y="122" width="14" height="16" rx="4" fill="#93c5fd" />
+        <text x="430" y="135" font-family="'JetBrains Mono', monospace" font-size="11" fill="#475569">0.01</text>
+      </g>
+
+      <!-- Nutritional Table & Diet Recommendation -->
+      <g transform="translate(520, 0)">
+        <text x="0" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#0f172a">
+          📋 Nutritional Info &amp; Diet Recommendation (Diabetes)
+        </text>
+        
+        <rect x="0" y="32" width="480" height="155" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+        
+        <!-- Table Header -->
+        <rect x="0" y="32" width="480" height="30" rx="8" fill="#f8fafc" />
+        <text x="12" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#475569">FOOD NAME</text>
+        <text x="130" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#475569">CAL</text>
+        <text x="175" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#475569">PROTEIN</text>
+        <text x="240" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#475569">FAT</text>
+        <text x="285" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#475569">SUGAR</text>
+        <text x="350" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#475569">DIET REC.</text>
+
+        <!-- Table Row -->
+        <text x="12" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#0f172a">Rendang Daging</text>
+        <text x="130" y="90" font-family="'JetBrains Mono', monospace" font-size="11" fill="#0f172a">193</text>
+        <text x="175" y="90" font-family="'JetBrains Mono', monospace" font-size="11" fill="#0f172a">18.5g</text>
+        <text x="240" y="90" font-family="'JetBrains Mono', monospace" font-size="11" fill="#0f172a">10.4g</text>
+        <text x="285" y="90" font-family="'JetBrains Mono', monospace" font-size="11" fill="#0f172a">2.1g</text>
+        
+        <!-- Sesuai Pill Badge -->
+        <rect x="345" y="74" width="85" height="24" rx="12" fill="#16a34a" />
+        <text x="365" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#ffffff">
+          Sesuai
+        </text>
+
+        <path d="M 0 115 L 480 115" stroke="#f1f5f9" stroke-width="1" />
+        
+        <text x="12" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b">
+          ✓ Low sugar content (2.1g ≤ 5g threshold) aligns with diabetes diet rule.
+        </text>
+        <text x="12" y="165" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8">
+          Dataset: TKPI (Tabel Komposisi Pangan Indonesia)
+        </text>
+      </g>
+
+    </g>
+  </g>
+</svg>

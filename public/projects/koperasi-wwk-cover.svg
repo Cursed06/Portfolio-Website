@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wwkForest" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e281b" />
+      <stop offset="100%" stop-color="#143622" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="675" fill="#0b1e14" />
+
+  <!-- Subtle organic background pattern -->
+  <g opacity="0.05">
+    <pattern id="leafGrid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M0 20 Q 20 0 40 20 Q 20 40 0 20 Z" fill="none" stroke="#ffffff" stroke-width="1" />
+    </pattern>
+    <rect width="1200" height="675" fill="url(#leafGrid)" />
+  </g>
+
+  <!-- Browser Window Wrapper -->
+  <g transform="translate(60, 40)" filter="url(#shadow)">
+    <!-- Window Body -->
+    <rect width="1080" height="595" rx="16" fill="url(#wwkForest)" stroke="#1f4e34" stroke-width="1.5" />
+
+    <!-- Window Top Header Bar -->
+    <path d="M 0 16 A 16 16 0 0 1 16 0 L 1064 0 A 16 16 0 0 1 1080 16 L 1080 48 L 0 48 Z" fill="#091d13" stroke="#163825" stroke-width="1" />
+    <circle cx="28" cy="24" r="6" fill="#ef4444" />
+    <circle cx="48" cy="24" r="6" fill="#f59e0b" />
+    <circle cx="68" cy="24" r="6" fill="#10b981" />
+
+    <!-- URL Bar -->
+    <rect x="110" y="12" width="420" height="24" rx="6" fill="#143622" stroke="#1f4e34" stroke-width="1" />
+    <text x="125" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#86efac">
+      https://koperasi-wwk.vercel.app
+    </text>
+
+    <!-- Top Navigation Simulation -->
+    <g transform="translate(580, 28)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#a7f3d0">
+      <text x="0" y="0" fill="#fbbf24">Beranda</text>
+      <text x="75" y="0">Tentang</text>
+      <text x="145" y="0">Layanan</text>
+      <text x="215" y="0">Bengkel Kreasi</text>
+      <text x="325" y="0">Kontak ▾</text>
+    </g>
+
+    <!-- Legal Entity Badge -->
+    <g transform="translate(48, 75)">
+      <rect width="360" height="24" rx="12" fill="#091d13" stroke="#1f4e34" stroke-width="1" />
+      <circle cx="14" cy="12" r="3" fill="#10b981" />
+      <text x="26" y="16" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#86efac">
+        AHU-0090747.AH.01.29.TAHUN 2025
+      </text>
+    </g>
+
+    <!-- Hero Headline & Copy -->
+    <g transform="translate(48, 125)">
+      <text x="0" y="38" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="900" fill="#fef3c7" letter-spacing="1">
+        WADHAH WANGI KREASI
+      </text>
+      
+      <text x="0" y="75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#a7f3d0" opacity="0.9">
+        Koperasi berbasis komunitas yang memasarkan produk anggota, menyediakan kebutuhan pokok,
+      </text>
+      <text x="0" y="95" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#a7f3d0" opacity="0.9">
+        dan meningkatkan kemampuan anggota melalui wadah Bengkel Kreasi terpadu.
+      </text>
+
+      <!-- CTA Button -->
+      <g transform="translate(0, 118)">
+        <rect width="185" height="40" rx="8" fill="url(#goldGrad)" />
+        <text x="24" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#0f172a">
+          Bergabung Sekarang ↗
+        </text>
+      </g>
+    </g>
+
+    <!-- 3 Pillars Cards Grid -->
+    <g transform="translate(48, 320)">
+      
+      <!-- Card 1: Koperasi Pemasaran -->
+      <g transform="translate(0, 0)">
+        <rect width="310" height="230" rx="12" fill="#091d13" stroke="#1f4e34" stroke-width="1.5" />
+        <text x="20" y="32" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#fbbf24">
+          01 / 03
+        </text>
+        <rect x="20" y="44" width="130" height="20" rx="4" fill="#143622" />
+        <text x="26" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#86efac">
+          KOPERASI PEMASARAN
+        </text>
+
+        <text x="20" y="92" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#ffffff">
+          Produk Anggota ke Pasar
+        </text>
+        <text x="20" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8" leading-relaxed">
+          Distribusi produk kuliner, kerajinan, dan kemasan branding anggota ke pasar yang lebih luas.
+        </text>
+
+        <path d="M 20 148 L 290 148" stroke="#1f4e34" stroke-width="1" />
+        <text x="20" y="172" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#a7f3d0">
+          ✓ Pemasaran produk UMKM warga
+        </text>
+        <text x="20" y="194" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#a7f3d0">
+          ✓ Standardisasi &amp; kemasan produk
+        </text>
+      </g>
+
+      <!-- Card 2: Koperasi Konsumen -->
+      <g transform="translate(335, 0)">
+        <rect width="310" height="230" rx="12" fill="#091d13" stroke="#1f4e34" stroke-width="1.5" />
+        <text x="20" y="32" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#fbbf24">
+          02 / 03
+        </text>
+        <rect x="20" y="44" width="125" height="20" rx="4" fill="#143622" />
+        <text x="26" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#86efac">
+          KOPERASI KONSUMEN
+        </text>
+
+        <text x="20" y="92" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#ffffff">
+          Sembako &amp; Kebutuhan Pokok
+        </text>
+        <text x="20" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8" leading-relaxed">
+          Penyediaan sembako berkualitas dengan harga bersaing bagi anggota dan warga sekitar.
+        </text>
+
+        <path d="M 20 148 L 290 148" stroke="#1f4e34" stroke-width="1" />
+        <text x="20" y="172" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#a7f3d0">
+          ✓ Harga anggota transparan
+        </text>
+        <text x="20" y="194" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#a7f3d0">
+          ✓ Kemitraan pemasok lokal
+        </text>
+      </g>
+
+      <!-- Card 3: Bengkel Kreasi -->
+      <g transform="translate(670, 0)">
+        <rect width="310" height="230" rx="12" fill="#091d13" stroke="#1f4e34" stroke-width="1.5" />
+        <text x="20" y="32" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#fbbf24">
+          03 / 03
+        </text>
+        <rect x="20" y="44" width="120" height="20" rx="4" fill="#143622" />
+        <text x="26" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#86efac">
+          BENGKEL KREASI (JASA)
+        </text>
+
+        <text x="20" y="92" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#ffffff">
+          Pelatihan &amp; Workshop
+        </text>
+        <text x="20" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8" leading-relaxed">
+          Ruang tumbuh bersama berbasis keahlian nyata — memasak, kerajinan tangan, dan bisnis.
+        </text>
+
+        <path d="M 20 148 L 290 148" stroke="#1f4e34" stroke-width="1" />
+        <text x="20" y="172" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#a7f3d0">
+          ✓ Workshop oleh &amp; untuk anggota
+        </text>
+        <text x="20" y="194" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#a7f3d0">
+          ✓ Monetisasi keahlian warga
+        </text>
+      </g>
+
+    </g>
+  </g>
+</svg>

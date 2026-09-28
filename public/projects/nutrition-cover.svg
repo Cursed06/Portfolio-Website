@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nutriGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c192c" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="warmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#nutriGrad)" />
+  
+  <!-- Header Bar -->
+  <rect x="40" y="30" width="720" height="45" rx="8" fill="#1e293b" stroke="#334155" />
+  <circle cx="65" cy="52" r="5" fill="#ef4444" />
+  <circle cx="82" cy="52" r="5" fill="#f59e0b" />
+  <circle cx="99" cy="52" r="5" fill="#10b981" />
+  <text x="130" y="58" fill="#94a3b8" font-family="monospace" font-size="13">vision-ai // meal-segmentation-and-macronutrient-analyzer</text>
+
+  <!-- Left: Meal Image Mockup with Bounding Boxes -->
+  <rect x="40" y="95" width="340" height="315" rx="8" fill="#0f172a" stroke="#334155" />
+  <!-- Simulated Dish Plate -->
+  <circle cx="210" cy="250" r="110" fill="#1e293b" stroke="#475569" stroke-width="2" />
+  <!-- Food segments -->
+  <circle cx="170" cy="220" r="45" fill="#10b981" fill-opacity="0.3" stroke="#10b981" stroke-width="1.5" stroke-dasharray="3,3" />
+  <text x="170" y="225" fill="#34d399" font-family="monospace" font-size="11" text-anchor="middle">Salad (98%)</text>
+
+  <circle cx="250" cy="230" r="40" fill="#f59e0b" fill-opacity="0.3" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3,3" />
+  <text x="250" y="235" fill="#fbbf24" font-family="monospace" font-size="11" text-anchor="middle">Chicken (96%)</text>
+
+  <circle cx="205" cy="290" r="40" fill="#38bdf8" fill-opacity="0.3" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3,3" />
+  <text x="205" y="295" fill="#38bdf8" font-family="monospace" font-size="11" text-anchor="middle">Brown Rice (92%)</text>
+
+  <!-- Right: Nutrition Breakdown Dashboard -->
+  <rect x="400" y="95" width="360" height="315" rx="8" fill="#1e293b" stroke="#334155" />
+  <text x="425" y="130" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="16">Nutritional Telemetry</text>
+  
+  <!-- Calorie Box -->
+  <rect x="425" y="150" width="310" height="60" rx="6" fill="#0f172a" stroke="#334155" />
+  <text x="440" y="175" fill="#94a3b8" font-family="sans-serif" font-size="11">ESTIMATED CALORIC ENERGY</text>
+  <text x="440" y="200" fill="#f59e0b" font-family="monospace" font-weight="bold" font-size="22">540 kcal</text>
+  <text x="640" y="195" fill="#10b981" font-family="monospace" font-size="11">± 6% DEV</text>
+
+  <!-- Macro Gauges -->
+  <text x="425" y="240" fill="#cbd5e1" font-family="sans-serif" font-size="12">Protein (38g / 70g Target)</text>
+  <rect x="425" y="250" width="310" height="8" rx="4" fill="#334155" />
+  <rect x="425" y="250" width="220" height="8" rx="4" fill="#3b82f6" />
+
+  <text x="425" y="280" fill="#cbd5e1" font-family="sans-serif" font-size="12">Carbohydrates (54g / 65g Target)</text>
+  <rect x="425" y="290" width="310" height="8" rx="4" fill="#334155" />
+  <rect x="425" y="290" width="260" height="8" rx="4" fill="#10b981" />
+
+  <text x="425" y="320" fill="#cbd5e1" font-family="sans-serif" font-size="12">Healthy Fats (14g / 22g Target)</text>
+  <rect x="425" y="330" width="310" height="8" rx="4" fill="#334155" />
+  <rect x="425" y="330" width="180" height="8" rx="4" fill="#f59e0b" />
+
+  <rect x="425" y="360" width="310" height="35" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+  <text x="580" y="382" fill="#34d399" font-family="monospace" font-size="12" text-anchor="middle">✓ Dietary Balance Standard Met</text>
+</svg>
