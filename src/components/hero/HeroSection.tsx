@@ -34,7 +34,7 @@ export const HeroSection: React.FC = () => {
 
             {/* Display Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-headline font-bold text-slate-900 tracking-tight leading-[1.1]">
-              Hi, I&apos;m <span className="text-blue-600 underline decoration-blue-200 decoration-wavy underline-offset-8">{profileData.name}</span>.
+              Hi, I&apos;m <span className="text-blue-600">{profileData.name}</span>.
               <span className="block mt-2 text-slate-800 text-3xl sm:text-4xl lg:text-5xl font-medium">
                 I build robust software systems &amp; craft disciplined visual experiences.
               </span>

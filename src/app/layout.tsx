@@ -24,12 +24,12 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: 'Rama Prodjowijono — Software Engineer & Graphic Designer',
-  description: 'Portfolio of a Computer Science student bridging software engineering, AI/computer vision, and high-fidelity visual design systems.',
-  keywords: ['Software Engineer', 'Computer Science', 'Graphic Design', 'AI', 'Next.js', 'TypeScript', 'Flutter', 'Spring Boot'],
-  authors: [{ name: 'Rama Prodjowijono' }],
+  description: 'Official portfolio of Darien Adika Rama Prodjowijono (Rama Prodjowijono) — Computer Science undergraduate at BINUS University bridging software engineering and visual design.',
+  keywords: ['Darien Adika Rama Prodjowijono', 'Rama Prodjowijono', 'Darien Prodjowijono', 'Software Engineer', 'Computer Science', 'BINUS University', 'Graphic Design', 'AI', 'Next.js', 'TypeScript', 'Flutter', 'Spring Boot'],
+  authors: [{ name: 'Darien Adika Rama Prodjowijono (Rama Prodjowijono)' }],
   openGraph: {
-    title: 'Rama Prodjowijono — CS × Design Portfolio',
-    description: 'Bridging engineering rigor with graphic communication.',
+    title: 'Rama Prodjowijono (Darien Adika Rama Prodjowijono) — CS × Design',
+    description: 'Bridging software engineering rigor with graphic communication.',
     type: 'website',
   },
 };

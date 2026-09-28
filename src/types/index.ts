@@ -79,6 +79,7 @@ export interface SkillGroup {
 
 export interface ProfileData {
   name: string;
+  fullName?: string;
   roleTitle: string;
   tagline: string;
   availability: string;

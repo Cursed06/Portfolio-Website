@@ -63,6 +63,11 @@ export const AboutSection: React.FC = () => {
                   </div>
                   <p className="font-headline font-bold text-sm text-slate-900">{profileData.education.degree}</p>
                   <p className="font-mono-code text-xs text-slate-500">{profileData.education.period} • GPA 3.71/4.00</p>
+                  {profileData.fullName && (
+                    <p className="font-mono-code text-[11px] text-slate-500 pt-1.5 mt-1.5 border-t border-slate-200/60">
+                      Official Record: <span className="font-semibold text-slate-800">{profileData.fullName}</span>
+                    </p>
+                  )}
                 </div>
 
                 <div className="p-3.5 rounded-xl bg-[#fcfbf7] border border-slate-200">
@@ -72,6 +77,11 @@ export const AboutSection: React.FC = () => {
                   </div>
                   <p className="font-headline font-bold text-sm text-slate-900">Multimedia Major</p>
                   <p className="font-mono-code text-xs text-slate-500">2021 — 2024 • Graphic Design & Animation</p>
+                  {profileData.fullName && (
+                    <p className="font-mono-code text-[11px] text-slate-500 pt-1.5 mt-1.5 border-t border-slate-200/60">
+                      Official Record: <span className="font-semibold text-slate-800">{profileData.fullName}</span>
+                    </p>
+                  )}
                 </div>
               </div>
             </div>

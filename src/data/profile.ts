@@ -2,6 +2,7 @@ import { ProfileData } from '@/types';
 
 export const profileData: ProfileData = {
   name: 'Rama Prodjowijono',
+  fullName: 'Darien Adika Rama Prodjowijono',
   roleTitle: 'CS Student & Visual Designer',
   tagline: 'Building robust systems with tactile, high-fidelity digital craft.',
   availability: 'Available for Software Engineering & Tech Internships',
